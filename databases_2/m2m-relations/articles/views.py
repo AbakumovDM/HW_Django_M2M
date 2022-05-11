@@ -8,6 +8,7 @@ def articles_list(request):
     template = 'articles/news.html'
     context = {}
 
+
     # используйте этот параметр для упорядочивания результатов
     # https://docs.djangoproject.com/en/2.2/ref/models/querysets/#django.db.models.query.QuerySet.order_by
     ordering = '-published_at'

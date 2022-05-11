@@ -75,6 +75,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'netology_m2m_relations',
+        'USER': 'postgres',
+        'PASSWORD': 'mikhalych2022',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -127,7 +129,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 try:
-    from .settings_local import *
+    from articles.settings_local import *
 except ImportError:
     pass
 
